@@ -1,3 +1,16 @@
 # configuration port
 server:
   port: 8082
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.100.51.19:3306/www12306?characterEncoding=utf8&useSSL=false
+    username: root
+    password: aini1314@xiaoqing
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
