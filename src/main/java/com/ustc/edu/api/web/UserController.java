@@ -32,7 +32,6 @@ public class UserController {
         User.setUserEmail(email);
 
         return UserRepository.save(User);
-
     }
     
 }
